@@ -1,0 +1,45 @@
+body {
+    font-family: verdana, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #ffefd5;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 30px;
+    color: #333;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+    cursor: pointer;
+    /* スタイルが変化した時に、アニメーションにかける時間を指定 */
+    transition: 0.8s;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    /* flex-wrap: wrap; */
+}
+
+.win {
+    background: pink;
+    border-radius: 50%;
+    /* 要素に回転アニメーションを付ける */
+    transform: rotate(360deg);
+}
+
+.lose {
+    transform: scale(0.9);
+}
